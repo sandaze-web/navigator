@@ -1,0 +1,20 @@
+@mixin includeFont($fontName, $fileName, $weight, $style) {
+  @font-face{
+    font-family: $fontName;
+    font-display: swap;
+    src: url('../fonts/#{$fileName}.woff2') format("woff2"), url("../fonts/#{$fileName}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+
+@include includeFont('Oswald-Bold', 'Oswald-Bold', '700', 'normal');
+@include includeFont('Oswald-Light', 'Oswald-Light', '300', 'normal');
+@include includeFont('Oswald-Medium', 'Oswald-Medium', '500', 'normal');
+@include includeFont('Oswald-Regular', 'Oswald-Regular', '400', 'normal');
+@include includeFont('Oswald-SemiBold', 'Oswald-SemiBold', '600', 'normal');
+@include includeFont('Roboto-Bold', 'Roboto-Bold', '700', 'normal');
+@include includeFont('Roboto-Light', 'Roboto-Light', '300', 'normal');
+@include includeFont('Roboto-Medium', 'Roboto-Medium', '500', 'normal');
+@include includeFont('Roboto-Regular', 'Roboto-Regular', '400', 'normal');

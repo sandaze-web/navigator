@@ -1,0 +1,71 @@
+// Заголовки, общие БЄМ блоки и проче...
+body {
+  @include font-oswaldR;
+  background: #F5F5F5;
+  overflow-x: hidden;
+}
+.titleBx {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    width: 61px;
+    height: 3px;
+    background-color: $--accent-color;
+  }
+  & h2 {
+    text-align: center;
+    font-size: rem(36);
+    @include font-robotoB;
+  }
+  & p {
+    text-align: center;
+    color: #646464;
+    @include font-robotoL;
+    line-height: rem(16);
+  }
+}
+button {
+  border-radius: 2px;
+}
+.animate-button {
+  & svg {
+    animation: moving_svg 1s ease infinite alternate;
+  }
+}
+.shine {
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    left: -150%;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.15) 100%);
+    transform: skew(-45deg);
+    pointer-events: none;
+    animation: shine 3.5s ease-in-out infinite;
+  }
+}
+@keyframes moving_svg {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes shine {
+  0% {
+    left: -200%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}

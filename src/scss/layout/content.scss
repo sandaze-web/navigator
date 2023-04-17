@@ -1,0 +1,55 @@
+.content {
+  background: url("../images/content/bg.png") no-repeat;
+  padding-top: 250px;
+  padding-bottom: 350px;
+  background-size: cover;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #28292E;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  &__subtitle {
+    font-size: rem(14);
+    color: $--accent-color;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+  }
+  &__title {
+    font-size: rem(36);
+    color: #ffffff;
+    max-width: 632px;
+    margin: 32px auto 0;
+    text-align: center;
+    @include font-robotoB;
+    line-height: rem(42);
+    position: relative;
+    z-index: 4;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 61px;
+      height: 3px;
+      background: $--accent-color;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -50px;
+    }
+  }
+
+  @include media(600) {
+    padding-bottom: 200px;
+    padding-top: 350px;
+    &__title {
+      font-size: rem(30);
+    }
+  }
+}

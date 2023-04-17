@@ -1,0 +1,77 @@
+.modal {
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.thanks {
+    & .modal-form {
+      padding: 60px;
+    }
+    & .modal-form__title {
+      text-align: center;
+    }
+  }
+  &-form {
+    width: 100%;
+    max-width: 726px;
+    background: $--accent-color;
+    padding: 108px 131px 61px 132px;
+    position: relative;
+    &__title {
+      font-size: rem(36);
+      @include font-robotoB;
+      text-transform: uppercase;
+      line-height: rem(50);
+    }
+    &-inputBx {
+      padding-top: 64px;
+      width: 100%;
+      & input {
+        width: 100%;
+        padding: 18px 0 18px 11px;
+        color: #252525;
+        @include font-robotoL;
+        @include styledPlaceholder(#252525)
+      }
+    }
+    &__button {
+      background: #28292E;
+      display: flex;
+      align-items: center;
+      padding: 16px 30px 16px 30px;
+      line-height: rem(30);
+      color: $--accent-color;
+      font-size: rem(14);
+      text-transform: uppercase;
+      margin-top: 64px;
+      & svg {
+        margin-left: 40px;
+      }
+    }
+    &-cross {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(calc(100% + 10px), -50%);
+      cursor: pointer;
+    }
+  }
+
+  @include media(600) {
+    &-form {
+      padding: 30px;
+      &__button {
+        margin-top: 30px;
+      }
+      &-inputBx {
+        padding-top: 30px;
+      }
+      &__title {
+        font-size: rem(30);
+      }
+      &-cross {
+        display: none;
+      }
+    }
+  }
+}
