@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nextArrow: '#brands-next',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1300,
                     settings: {
                         slidesToShow: 3,
                     }
@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function () {
             nextArrow: '#partners-next',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1300,
                     settings: {
                         slidesToShow: 3,
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 769,
                     settings: {
                         slidesToShow: 2,
                     }
@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', function () {
             dots: true,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1300,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 769,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     }
                 },
                 {
@@ -127,9 +127,45 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
-    if(document.querySelector('.phone-mask')) {
-        $('.phone-mask').mask('+7 (999) 999-99-99')
+    if(document.querySelector('.map-overflow')) {
+        document.querySelector('.map-overflow').addEventListener('click', () => {
+            document.querySelector('.map-overflow').style.display = 'none'
+        })
+
+        window.addEventListener('scroll', () => {
+            document.querySelector('.map-overflow').style.display = 'block'
+        })
+        document.querySelector('.map-overflow').addEventListener('touchmove', () => {
+            document.querySelector('.map-overflow').style.display = 'none'
+        })
     }
+
+    if(document.querySelector('.header-burger')) {
+        let burger = document.querySelector('.header-burger'),
+            headerNav = document.querySelector('.header-nav'),
+            blackout = document.querySelector('.blackout'),
+            links = document.querySelectorAll('.header-nav__item')
+
+        burger.addEventListener('click', () => {
+            headerNav.classList.toggle('active')
+            blackout.classList.toggle('active')
+            toggleBodyLock(headerNav.classList.contains('active'))
+        })
+        blackout.addEventListener('click', () => {
+            headerNav.classList.toggle('active')
+            blackout.classList.toggle('active')
+            toggleBodyLock(headerNav.classList.contains('active'))
+        })
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                headerNav.classList.remove('active')
+                blackout.classList.remove('active')
+                toggleBodyLock(headerNav.classList.contains('active'))
+            })
+        })
+    }
+
 })
 
 // Паралакс мышей ========================================================================================

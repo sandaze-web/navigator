@@ -247,10 +247,6 @@
                         <div class="offer-form-inputBx"><input type="text" placeholder="Имя" required></div>
                         <div class="offer-form-inputBx"><input type="email" placeholder="E-mail" required></div>
                         <div class="offer-form-inputBx"><input type="text" placeholder="Компания" required></div>
-                        <div class="offer-form-inputBx checkbox">
-                            <input id="checkbox" type="checkbox" class="" required>
-                            <label for="checkbox">Согласен с <a href="#">политикой конфиденциальности</a></label>
-                        </div>
                         <button class="offer-form__button animate-button shine">
                             отправить
                             <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,11 +451,13 @@
     <!-- /.portfolio -->
 
     <section class="map">
-        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/22/kaliningrad/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Калининград</a><a href="https://yandex.ru/maps/22/kaliningrad/house/ulitsa_leytenanta_yanalova_42/ZkkYcgBmS0MGQFtufXtzeHlrYQ==/?ll=20.479448%2C54.729587&utm_medium=mapframe&utm_source=maps&z=15.48" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=20.479448%2C54.729587&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjIyOTAyNhJY0KDQvtGB0YHQuNGPLCDQmtCw0LvQuNC90LjQvdCz0YDQsNC0LCDRg9C70LjRhtCwINCb0LXQudGC0LXQvdCw0L3RgtCwINCv0L3QsNC70L7QstCwLCA0MiIKDWLPo0EVGOtaQg%2C%2C&z=15.48" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="map-overflow"></div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba0efa3c412230dd4c8f6da36afadcaaf19718649d9bd598f8e784f9ad4bac7e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
     <!-- /.map -->
 </main>
 @@include('html/footer.html', {})
 @@include('html/script.html', {})
+
 </body>
 </html> 

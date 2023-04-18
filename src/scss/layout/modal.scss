@@ -17,6 +17,9 @@
     background: $--accent-color;
     padding: 108px 131px 61px 132px;
     position: relative;
+    @include media(800){
+      padding: 108px 70px 61px 70px;
+    }
     &__title {
       font-size: rem(36);
       @include font-robotoB;
@@ -54,6 +57,9 @@
       top: 0;
       transform: translate(calc(100% + 10px), -50%);
       cursor: pointer;
+      @include media(800){
+        display: none;
+      }
     }
   }
 

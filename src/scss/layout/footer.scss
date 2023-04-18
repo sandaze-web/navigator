@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media(1080){
+      flex-wrap: wrap;
+    }
   }
   &-logoBx {
 
@@ -81,7 +84,8 @@
       max-width: 448px;
     }
   }
-  @include media(600) {
+  @include media(768) {
+    padding-bottom: 60px;
     &-address {
       margin-top: 20px;
     }
@@ -91,8 +95,44 @@
     }
     &__item {
       padding: 15px 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 0;
+      @include media(360) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &:last-child {
+        & .footer__item-title {
+          &:after {
+            content: none;
+          }
+        }
+      }
       &:nth-child(2) {
         margin-top: 30px;
+      }
+      &-title {
+        margin-bottom: 0;
+        &:after {
+          bottom: -15px;
+          @include media(360) {
+            display: none;
+          }
+        }
+      }
+      &-link {
+        margin-bottom: 10px;
+      }
+      &-helper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include media(360) {
+          align-items: flex-start;
+          padding-top: 20px;
+        }
       }
     }
     &-bottom {
@@ -103,6 +143,11 @@
         @include notLast {
           margin-bottom: 20px;
         }
+      }
+    }
+    &-pattern {
+      &.right {
+        max-width: 360px;
       }
     }
   }

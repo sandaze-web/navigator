@@ -43,12 +43,18 @@
       &.right {
         right: 0;
         transform: translate(100%, -50%);
+        @include media(1366) {
+          transform: translate(15%, -50%);
+        }
         & svg {
           margin-right: -20px;
         }
       }
       &.left {
         transform: translate(-100%, -50%);
+        @include media(1366) {
+          transform: translate(-15%, -50%);
+        }
         & svg {
           margin-left: -20px;
         }

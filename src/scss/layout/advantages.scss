@@ -150,7 +150,7 @@
     }
   }
 
-  @include media(600) {
+  @include media(768) {
     padding-top: 80px;
     padding-bottom: 80px;
     &__title {

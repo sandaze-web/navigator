@@ -105,7 +105,15 @@
 }
 .map {
   height: 479px;
+  position: relative;
   & div, & iframe {
+    width: 100%;
+    height: 100%;
+  }
+  &-overflow {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
   }

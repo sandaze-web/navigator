@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- ========== COLOR BRAND ========== -->
+  <link rel="stylesheet" href="static/css/color.css">
+
+  <!-- ========== MAIN CSS ========== -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ========== PLUGINS CSS ========== -->
+  <link rel="stylesheet" href="static/css/all.css">
+
+  <!--==========   FAVICON   ==========-->
+  <link rel="apple-touch-icon" sizes="76x76" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <title>Главная</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <div class="header-helper">
+            <div class="header-top">
+                <a href="" class="header-logoBx">
+                    <img src="images/header/logo.png" alt="">
+                </a>
+                <!-- /.header-logoBx -->
+                <div class="header-social">
+                    <div class="header-social__item">
+                        <div class="header-social__item-svgBx">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.25 10C0.906251 10 0.611876 9.8775 0.366876 9.6325C0.121876 9.3875 -0.000415605 9.09333 1.06112e-06 8.75V1.25C1.06112e-06 0.906251 0.122501 0.611876 0.367501 0.366876C0.612501 0.121876 0.906667 -0.000415605 1.25 1.06112e-06H11.25C11.5937 1.06112e-06 11.8881 0.122501 12.1331 0.367501C12.3781 0.612501 12.5004 0.906668 12.5 1.25V8.75C12.5 9.09375 12.3775 9.38812 12.1325 9.63312C11.8875 9.87812 11.5933 10.0004 11.25 10H1.25ZM11.25 2.5L6.57812 5.42188C6.52604 5.45313 6.47125 5.47667 6.41375 5.4925C6.35625 5.50833 6.30167 5.51604 6.25 5.51562C6.19792 5.51562 6.14312 5.50792 6.08562 5.4925C6.02812 5.47708 5.97354 5.45354 5.92187 5.42188L1.25 2.5V8.75H11.25V2.5ZM6.25 4.375L11.25 1.25H1.25L6.25 4.375ZM1.25 2.65625V1.73438V1.75V1.7425V2.65625Z" fill="#FEC000"/>
+                            </svg>
+                        </div>
+                        <a href="mailto: navigator-yug@mail.ru" class="header-social__item-link">navigator-yug@mail.ru</a>
+                    </div>
+                    <div class="header-social__item">
+                        <div class="header-social__item-svgBx">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 4.44444C5.84259 4.44444 5.71056 4.39111 5.60389 4.28444C5.49722 4.17778 5.44407 4.04593 5.44444 3.88889V1.66667C5.44444 1.50926 5.49778 1.37722 5.60444 1.27056C5.71111 1.16389 5.84296 1.11074 6 1.11111C6.15741 1.11111 6.28944 1.16444 6.39611 1.27111C6.50278 1.37778 6.55593 1.50963 6.55556 1.66667V2.55556L8.94444 0.166667C9.0463 0.0648148 9.17593 0.0138889 9.33333 0.0138889C9.49074 0.0138889 9.62037 0.0648148 9.72222 0.166667C9.82407 0.268519 9.875 0.398148 9.875 0.555556C9.875 0.712963 9.82407 0.842593 9.72222 0.944444L7.33333 3.33333H8.22222C8.37963 3.33333 8.51167 3.38667 8.61833 3.49333C8.725 3.6 8.77815 3.73185 8.77778 3.88889C8.77778 4.0463 8.72444 4.17833 8.61778 4.285C8.51111 4.39167 8.37926 4.44482 8.22222 4.44444H6ZM9.41667 10C8.22222 10 7.05796 9.7337 5.92389 9.20111C4.78981 8.66852 3.78519 7.96482 2.91 7.09C2.03481 6.21519 1.33111 5.21056 0.798889 4.07611C0.266667 2.94167 0.00037037 1.77741 0 0.583333C0 0.416667 0.0555555 0.277778 0.166667 0.166667C0.277778 0.0555555 0.416667 0 0.583333 0H2.83333C2.96296 0 3.0787 0.0416666 3.18056 0.125C3.28241 0.208333 3.34259 0.314815 3.36111 0.444444L3.72222 2.38889C3.74074 2.51852 3.73833 2.63667 3.715 2.74333C3.69167 2.85 3.63852 2.94481 3.55556 3.02778L2.22222 4.38889C2.61111 5.05556 3.09722 5.68056 3.68056 6.26389C4.26389 6.84722 4.90741 7.35185 5.61111 7.77778L6.91667 6.47222C7 6.38889 7.10889 6.32648 7.24333 6.285C7.37778 6.24352 7.50963 6.23185 7.63889 6.25L9.55556 6.63889C9.68519 6.66667 9.79167 6.72926 9.875 6.82667C9.95833 6.92407 10 7.03741 10 7.16667V9.41667C10 9.58333 9.94445 9.72222 9.83333 9.83333C9.72222 9.94445 9.58333 10 9.41667 10ZM1.69444 3.33333L2.61111 2.41667L2.36111 1.11111H1.13889C1.18519 1.49074 1.25 1.86574 1.33333 2.23611C1.41667 2.60648 1.53704 2.97222 1.69444 3.33333ZM8.88889 8.86111V7.63889L7.58333 7.36111L6.66667 8.27778C7.02778 8.43519 7.39352 8.56482 7.76389 8.66667C8.13426 8.76852 8.50926 8.83333 8.88889 8.86111Z" fill="#FEC000"/>
+                            </svg>
+                        </div>
+                        <a href="tel: +7 (4012) 91-61-24" class="header-social__item-link">+7 (4012) 91-61-24</a>
+                    </div>
+                    <div class="header-social__item">
+                        <div class="header-social__item-svgBx">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 4.44444C5.84259 4.44444 5.71056 4.39111 5.60389 4.28444C5.49722 4.17778 5.44407 4.04593 5.44444 3.88889V1.66667C5.44444 1.50926 5.49778 1.37722 5.60444 1.27056C5.71111 1.16389 5.84296 1.11074 6 1.11111C6.15741 1.11111 6.28944 1.16444 6.39611 1.27111C6.50278 1.37778 6.55593 1.50963 6.55556 1.66667V2.55556L8.94444 0.166667C9.0463 0.0648148 9.17593 0.0138889 9.33333 0.0138889C9.49074 0.0138889 9.62037 0.0648148 9.72222 0.166667C9.82407 0.268519 9.875 0.398148 9.875 0.555556C9.875 0.712963 9.82407 0.842593 9.72222 0.944444L7.33333 3.33333H8.22222C8.37963 3.33333 8.51167 3.38667 8.61833 3.49333C8.725 3.6 8.77815 3.73185 8.77778 3.88889C8.77778 4.0463 8.72444 4.17833 8.61778 4.285C8.51111 4.39167 8.37926 4.44482 8.22222 4.44444H6ZM9.41667 10C8.22222 10 7.05796 9.7337 5.92389 9.20111C4.78981 8.66852 3.78519 7.96482 2.91 7.09C2.03481 6.21519 1.33111 5.21056 0.798889 4.07611C0.266667 2.94167 0.00037037 1.77741 0 0.583333C0 0.416667 0.0555555 0.277778 0.166667 0.166667C0.277778 0.0555555 0.416667 0 0.583333 0H2.83333C2.96296 0 3.0787 0.0416666 3.18056 0.125C3.28241 0.208333 3.34259 0.314815 3.36111 0.444444L3.72222 2.38889C3.74074 2.51852 3.73833 2.63667 3.715 2.74333C3.69167 2.85 3.63852 2.94481 3.55556 3.02778L2.22222 4.38889C2.61111 5.05556 3.09722 5.68056 3.68056 6.26389C4.26389 6.84722 4.90741 7.35185 5.61111 7.77778L6.91667 6.47222C7 6.38889 7.10889 6.32648 7.24333 6.285C7.37778 6.24352 7.50963 6.23185 7.63889 6.25L9.55556 6.63889C9.68519 6.66667 9.79167 6.72926 9.875 6.82667C9.95833 6.92407 10 7.03741 10 7.16667V9.41667C10 9.58333 9.94445 9.72222 9.83333 9.83333C9.72222 9.94445 9.58333 10 9.41667 10ZM1.69444 3.33333L2.61111 2.41667L2.36111 1.11111H1.13889C1.18519 1.49074 1.25 1.86574 1.33333 2.23611C1.41667 2.60648 1.53704 2.97222 1.69444 3.33333ZM8.88889 8.86111V7.63889L7.58333 7.36111L6.66667 8.27778C7.02778 8.43519 7.39352 8.56482 7.76389 8.66667C8.13426 8.76852 8.50926 8.83333 8.88889 8.86111Z" fill="#FEC000"/>
+                            </svg>
+                        </div>
+                        <a href="tel:+7 (929) 16-42-003" class="header-social__item-link">+7 (929) 16-42-003</a>
+                    </div>
+                </div>
+                <!-- /.header-social -->
+            </div>
+            <!-- /.header-top -->
+            <div class="header-burger">
+                <span></span>
+            </div>
+        </div>
+        <!-- /.header-helper -->
+        <nav class="header-nav">
+            <ul>
+                <li class="header-nav__item"><a href="#advantages" class="header-nav__link">О компании</a></li>
+                <li class="header-nav__item"><a href="#tags" class="header-nav__link">Услуги</a></li>
+                <li class="header-nav__item"><a href="#brands" class="header-nav__link">Бренды</a></li>
+                <li class="header-nav__item"><a href="#partners" class="header-nav__link">Партнеры</a></li>
+                <li class="header-nav__item"><a href="#offer" class="header-nav__link">Спецпредложения</a></li>
+                <li class="header-nav__item"><a href="#purchase" class="header-nav__link">покупка техники</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">новости</a></li>
+                <li class="header-nav__item"><a href="#footer" class="header-nav__link">контакты</a></li>
+            </ul>
+            <div class="header-social mobile">
+                <div class="header-social__item">
+                    <div class="header-social__item-svgBx">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 10C0.906251 10 0.611876 9.8775 0.366876 9.6325C0.121876 9.3875 -0.000415605 9.09333 1.06112e-06 8.75V1.25C1.06112e-06 0.906251 0.122501 0.611876 0.367501 0.366876C0.612501 0.121876 0.906667 -0.000415605 1.25 1.06112e-06H11.25C11.5937 1.06112e-06 11.8881 0.122501 12.1331 0.367501C12.3781 0.612501 12.5004 0.906668 12.5 1.25V8.75C12.5 9.09375 12.3775 9.38812 12.1325 9.63312C11.8875 9.87812 11.5933 10.0004 11.25 10H1.25ZM11.25 2.5L6.57812 5.42188C6.52604 5.45313 6.47125 5.47667 6.41375 5.4925C6.35625 5.50833 6.30167 5.51604 6.25 5.51562C6.19792 5.51562 6.14312 5.50792 6.08562 5.4925C6.02812 5.47708 5.97354 5.45354 5.92187 5.42188L1.25 2.5V8.75H11.25V2.5ZM6.25 4.375L11.25 1.25H1.25L6.25 4.375ZM1.25 2.65625V1.73438V1.75V1.7425V2.65625Z" fill="#FEC000"/>
+                        </svg>
+                    </div>
+                    <a href="mailto: navigator-yug@mail.ru" class="header-social__item-link">navigator-yug@mail.ru</a>
+                </div>
+                <div class="header-social__item">
+                    <div class="header-social__item-svgBx">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 4.44444C5.84259 4.44444 5.71056 4.39111 5.60389 4.28444C5.49722 4.17778 5.44407 4.04593 5.44444 3.88889V1.66667C5.44444 1.50926 5.49778 1.37722 5.60444 1.27056C5.71111 1.16389 5.84296 1.11074 6 1.11111C6.15741 1.11111 6.28944 1.16444 6.39611 1.27111C6.50278 1.37778 6.55593 1.50963 6.55556 1.66667V2.55556L8.94444 0.166667C9.0463 0.0648148 9.17593 0.0138889 9.33333 0.0138889C9.49074 0.0138889 9.62037 0.0648148 9.72222 0.166667C9.82407 0.268519 9.875 0.398148 9.875 0.555556C9.875 0.712963 9.82407 0.842593 9.72222 0.944444L7.33333 3.33333H8.22222C8.37963 3.33333 8.51167 3.38667 8.61833 3.49333C8.725 3.6 8.77815 3.73185 8.77778 3.88889C8.77778 4.0463 8.72444 4.17833 8.61778 4.285C8.51111 4.39167 8.37926 4.44482 8.22222 4.44444H6ZM9.41667 10C8.22222 10 7.05796 9.7337 5.92389 9.20111C4.78981 8.66852 3.78519 7.96482 2.91 7.09C2.03481 6.21519 1.33111 5.21056 0.798889 4.07611C0.266667 2.94167 0.00037037 1.77741 0 0.583333C0 0.416667 0.0555555 0.277778 0.166667 0.166667C0.277778 0.0555555 0.416667 0 0.583333 0H2.83333C2.96296 0 3.0787 0.0416666 3.18056 0.125C3.28241 0.208333 3.34259 0.314815 3.36111 0.444444L3.72222 2.38889C3.74074 2.51852 3.73833 2.63667 3.715 2.74333C3.69167 2.85 3.63852 2.94481 3.55556 3.02778L2.22222 4.38889C2.61111 5.05556 3.09722 5.68056 3.68056 6.26389C4.26389 6.84722 4.90741 7.35185 5.61111 7.77778L6.91667 6.47222C7 6.38889 7.10889 6.32648 7.24333 6.285C7.37778 6.24352 7.50963 6.23185 7.63889 6.25L9.55556 6.63889C9.68519 6.66667 9.79167 6.72926 9.875 6.82667C9.95833 6.92407 10 7.03741 10 7.16667V9.41667C10 9.58333 9.94445 9.72222 9.83333 9.83333C9.72222 9.94445 9.58333 10 9.41667 10ZM1.69444 3.33333L2.61111 2.41667L2.36111 1.11111H1.13889C1.18519 1.49074 1.25 1.86574 1.33333 2.23611C1.41667 2.60648 1.53704 2.97222 1.69444 3.33333ZM8.88889 8.86111V7.63889L7.58333 7.36111L6.66667 8.27778C7.02778 8.43519 7.39352 8.56482 7.76389 8.66667C8.13426 8.76852 8.50926 8.83333 8.88889 8.86111Z" fill="#FEC000"/>
+                        </svg>
+                    </div>
+                    <a href="tel: +7 (4012) 91-61-24" class="header-social__item-link">+7 (4012) 91-61-24</a>
+                </div>
+                <div class="header-social__item">
+                    <div class="header-social__item-svgBx">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 4.44444C5.84259 4.44444 5.71056 4.39111 5.60389 4.28444C5.49722 4.17778 5.44407 4.04593 5.44444 3.88889V1.66667C5.44444 1.50926 5.49778 1.37722 5.60444 1.27056C5.71111 1.16389 5.84296 1.11074 6 1.11111C6.15741 1.11111 6.28944 1.16444 6.39611 1.27111C6.50278 1.37778 6.55593 1.50963 6.55556 1.66667V2.55556L8.94444 0.166667C9.0463 0.0648148 9.17593 0.0138889 9.33333 0.0138889C9.49074 0.0138889 9.62037 0.0648148 9.72222 0.166667C9.82407 0.268519 9.875 0.398148 9.875 0.555556C9.875 0.712963 9.82407 0.842593 9.72222 0.944444L7.33333 3.33333H8.22222C8.37963 3.33333 8.51167 3.38667 8.61833 3.49333C8.725 3.6 8.77815 3.73185 8.77778 3.88889C8.77778 4.0463 8.72444 4.17833 8.61778 4.285C8.51111 4.39167 8.37926 4.44482 8.22222 4.44444H6ZM9.41667 10C8.22222 10 7.05796 9.7337 5.92389 9.20111C4.78981 8.66852 3.78519 7.96482 2.91 7.09C2.03481 6.21519 1.33111 5.21056 0.798889 4.07611C0.266667 2.94167 0.00037037 1.77741 0 0.583333C0 0.416667 0.0555555 0.277778 0.166667 0.166667C0.277778 0.0555555 0.416667 0 0.583333 0H2.83333C2.96296 0 3.0787 0.0416666 3.18056 0.125C3.28241 0.208333 3.34259 0.314815 3.36111 0.444444L3.72222 2.38889C3.74074 2.51852 3.73833 2.63667 3.715 2.74333C3.69167 2.85 3.63852 2.94481 3.55556 3.02778L2.22222 4.38889C2.61111 5.05556 3.09722 5.68056 3.68056 6.26389C4.26389 6.84722 4.90741 7.35185 5.61111 7.77778L6.91667 6.47222C7 6.38889 7.10889 6.32648 7.24333 6.285C7.37778 6.24352 7.50963 6.23185 7.63889 6.25L9.55556 6.63889C9.68519 6.66667 9.79167 6.72926 9.875 6.82667C9.95833 6.92407 10 7.03741 10 7.16667V9.41667C10 9.58333 9.94445 9.72222 9.83333 9.83333C9.72222 9.94445 9.58333 10 9.41667 10ZM1.69444 3.33333L2.61111 2.41667L2.36111 1.11111H1.13889C1.18519 1.49074 1.25 1.86574 1.33333 2.23611C1.41667 2.60648 1.53704 2.97222 1.69444 3.33333ZM8.88889 8.86111V7.63889L7.58333 7.36111L6.66667 8.27778C7.02778 8.43519 7.39352 8.56482 7.76389 8.66667C8.13426 8.76852 8.50926 8.83333 8.88889 8.86111Z" fill="#FEC000"/>
+                        </svg>
+                    </div>
+                    <a href="tel:+7 (929) 16-42-003" class="header-social__item-link">+7 (929) 16-42-003</a>
+                </div>
+            </div>
+            <!-- /.header-social -->
+        </nav>
+        <!-- /.header-nav -->
+    </div>
+</header>
+<main class="main">
+    <section class="content">
+        <div class="content__container">
+            <p class="content__subtitle">ГК NAVIGATOR «ШТУРМАН В МИРЕ ТЕХНИКИ»</p>
+            <!-- /.content__subtitle -->
+            <h1 class="content__title">ВАШ НАДЕЖНЫЙ ПОСТАВЩИК СПЕЦИАЛИЗИРОВАННОЙ И ГРУЗОВОЙ ТЕХНИКИ ИЗ ЕВРОПЫ</h1>
+            <!-- /.content__title -->
+        </div>
+        <!-- /.content__container -->
+    </section>
+    <!-- /.content -->
+
+    <section class="tags" id="tags">
+        <div class="tags__container">
+            <div class="tags-box">
+                <div class="tags__item">
+                    <div class="tags__item-svgBx">
+                        <img src="images/tags/1.svg" alt="">
+                    </div>
+                    <p class="tags__item-title">Доставка <br> транспорта</p>
+                    <button class="animate-button tags__item-button" data-type="form">подробнее
+                        <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3536 4.35356C22.5488 4.15829 22.5488 3.84171 22.3536 3.64645L19.1716 0.464468C18.9763 0.269206 18.6597 0.269206 18.4645 0.464468C18.2692 0.65973 18.2692 0.976312 18.4645 1.17157L21.2929 4L18.4645 6.82843C18.2692 7.02369 18.2692 7.34027 18.4645 7.53554C18.6597 7.7308 18.9763 7.7308 19.1716 7.53554L22.3536 4.35356ZM-4.37114e-08 4.5L22 4.5L22 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tags__item">
+                    <div class="tags__item-svgBx">
+                        <img src="images/tags/2.svg" alt="">
+                    </div>
+                    <p class="tags__item-title">Лизинг</p>
+                    <button class="animate-button tags__item-button" data-type="form">подробнее
+                        <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3536 4.35356C22.5488 4.15829 22.5488 3.84171 22.3536 3.64645L19.1716 0.464468C18.9763 0.269206 18.6597 0.269206 18.4645 0.464468C18.2692 0.65973 18.2692 0.976312 18.4645 1.17157L21.2929 4L18.4645 6.82843C18.2692 7.02369 18.2692 7.34027 18.4645 7.53554C18.6597 7.7308 18.9763 7.7308 19.1716 7.53554L22.3536 4.35356ZM-4.37114e-08 4.5L22 4.5L22 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tags__item">
+                    <div class="tags__item-svgBx">
+                        <img src="images/tags/3.svg" alt="">
+                    </div>
+                    <p class="tags__item-title">таможенное <br> оформление</p>
+                    <button class="animate-button tags__item-button" data-type="form">подробнее
+                        <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3536 4.35356C22.5488 4.15829 22.5488 3.84171 22.3536 3.64645L19.1716 0.464468C18.9763 0.269206 18.6597 0.269206 18.4645 0.464468C18.2692 0.65973 18.2692 0.976312 18.4645 1.17157L21.2929 4L18.4645 6.82843C18.2692 7.02369 18.2692 7.34027 18.4645 7.53554C18.6597 7.7308 18.9763 7.7308 19.1716 7.53554L22.3536 4.35356ZM-4.37114e-08 4.5L22 4.5L22 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tags__item">
+                    <div class="tags__item-svgBx">
+                        <img src="images/tags/4.svg" alt="">
+                    </div>
+                    <p class="tags__item-title">запчасти</p>
+                    <button class="animate-button tags__item-button" data-type="form">подробнее
+                        <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3536 4.35356C22.5488 4.15829 22.5488 3.84171 22.3536 3.64645L19.1716 0.464468C18.9763 0.269206 18.6597 0.269206 18.4645 0.464468C18.2692 0.65973 18.2692 0.976312 18.4645 1.17157L21.2929 4L18.4645 6.82843C18.2692 7.02369 18.2692 7.34027 18.4645 7.53554C18.6597 7.7308 18.9763 7.7308 19.1716 7.53554L22.3536 4.35356ZM-4.37114e-08 4.5L22 4.5L22 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+                <img class="left tags-pattern lines" src="images/tags/pattern-lines.svg" alt="">
+                <img class="right tags-pattern lines" src="images/tags/pattern-lines.svg" alt="">
+
+                <img class="left tags-pattern dots" src="images/tags/pattern-dots.svg" alt="">
+                <img class="right tags-pattern dots" src="images/tags/pattern-dots.svg" alt="">
+
+                <img class="tags-pattern circle" src="images/tags/pattern-circle-dots.svg" alt="">
+            </div>
+            <!-- /.tags-box -->
+        </div>
+        <!-- /.tags__container -->
+    </section>
+    <!-- /.tags -->
+
+    <section class="advantages" id="advantages">
+        <div class="advantages__container">
+            <h2 class="advantages__title">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ</h2>
+            <!-- /.advantages__title -->
+            <div class="advantages-inner">
+                <div class="advantages-expirience">
+                    <p class="advantages-expirience__count">17</p>
+                    <!-- /.advantages-expirience__count -->
+                    <div class="advantages-expirience-main">
+                        <p>ЛЕТ ОПЫТА</p>
+                        <p>
+                            Группа компаний “Navigator” осуществляет прямые поставки запасных частей
+                            и агрегатов для транспортных средств под заказ из Европы и Китая.
+                        </p>
+                    </div>
+                    <!-- /.advantages-expirience-main -->
+                </div>
+                <!-- /.advantages-expirience -->
+                <div class="advantages-box">
+                    <div class="advantages__item">
+                        <p class="advantages__item-title">Доставка транспорта <br> из Европы в РФ</p>
+                        <p class="advantages__item-subtitle">Поставка грузовой и <br> спецтехники под заказ</p>
+                    </div>
+                    <div class="advantages__item">
+                        <p class="advantages__item-title">Работа по <br> договору</p>
+                        <p class="advantages__item-subtitle">Оплата производится по безналичному расчету в т.ч. НДС.</p>
+                    </div>
+                    <div class="advantages__item">
+                        <p class="advantages__item-title">Полная <br> таможенная чистка</p>
+                        <p class="advantages__item-subtitle">получение <br> электронного ПТС
+                        </p>
+                    </div>
+                    <div class="advantages__item">
+                        <p class="advantages__item-title">Сопровождение <br> лизинга</p>
+                        <p class="advantages__item-subtitle">Являемся партнерами лизинговых компаний на территории РФ</p>
+                    </div>
+                </div>
+                <!-- /.advantages-box -->
+            </div>
+            <!-- /.advantages-inner -->
+        </div>
+        <!-- /.advantages__container -->
+        <img class="advantages-pattern lines" src="images/advantages/pattern-lines.svg" alt="">
+
+        <img class="advantages-pattern dots" src="images/advantages/pattern-dots.svg" alt="">
+
+        <img class="advantages-pattern circle" src="images/advantages/pattern-circle.svg" alt="">
+
+        <img class="advantages-pattern invert-circle" src="images/advantages/pattern-circle.svg" alt="">
+    </section>
+    <!-- /.advantages -->
+
+    <section class="technics">
+        <div class="technics__container">
+            <div class="titleBx technics-titleBx">
+                <h2 class="technics__title">КУПИТЬ ТЕХНИКУ</h2>
+                <!-- /.technics__title -->
+            </div>
+            <div class="technics-box">
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/1.png" alt=""></div>
+                    <p class="technics__item-title">Тягач</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/2.png" alt=""></div>
+                    <p class="technics__item-title">Самосвал</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/3.png" alt=""></div>
+                    <p class="technics__item-title">Сельскохозяйственная техника</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/4.png" alt=""></div>
+                    <p class="technics__item-title">Автобус</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/5.png" alt=""></div>
+                    <p class="technics__item-title">Строительная техника</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/6.png" alt=""></div>
+                    <p class="technics__item-title">Ресайклер</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/7.png" alt=""></div>
+                    <p class="technics__item-title">Навесное оборудование</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/8.png" alt=""></div>
+                    <p class="technics__item-title">Лесозаготовительная техника</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/9.png" alt=""></div>
+                    <p class="technics__item-title">Полуприцеп</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/10.png" alt=""></div>
+                    <p class="technics__item-title">Грузовик</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/11.png" alt=""></div>
+                    <p class="technics__item-title">Легкий коммерческий транспорт</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/12.png" alt=""></div>
+                    <p class="technics__item-title">Автопоезд</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/13.png" alt=""></div>
+                    <p class="technics__item-title">Грунтовый</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/14.png" alt=""></div>
+                    <p class="technics__item-title">прицеп</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/15.png" alt=""></div>
+                    <p class="technics__item-title">другое</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/16.png" alt=""></div>
+                    <p class="technics__item-title">Гусеничный</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/17.png" alt=""></div>
+                    <p class="technics__item-title">Сортиро</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/18.png" alt=""></div>
+                    <p class="technics__item-title">Перегружат</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/19.png" alt=""></div>
+                    <p class="technics__item-title">Дорожная техника</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/20.png" alt=""></div>
+                    <p class="technics__item-title">Асфальт</p>
+                </div>
+                <div class="technics__item">
+                    <div class="technics__item-img"><img src="images/technics/21.png" alt=""></div>
+                    <p class="technics__item-title">Грейферн</p>
+                </div>
+            </div>
+            <!-- /.technics-box -->
+        </div>
+        <!-- /.technics__container -->
+    </section>
+    <!-- /.technics -->
+
+    <section class="offer" id="offer">
+        <div class="offer__container">
+            <div class="offer-inner">
+                <div class="offer-titleBx">
+                    <h2 class="offer__title">НУЖНА КОНСУЛЬТАЦИЯ?</h2>
+                    <!-- /.offer__title -->
+                    <p class="offer__subtitle">Хотите узнать больше о доставке специализированной и грузовой техники, оставьте заявку на консультацию и мы свяжемся с вами в ближайшее время.</p>
+                    <!-- /.offer__subtitle -->
+                </div>
+                <!-- /.offer-titleBx -->
+                <div class="offer-formBx">
+                    <form action="#" class="offer-form">
+                        <div class="offer-form-inputBx"><input type="text" placeholder="Имя" required></div>
+                        <div class="offer-form-inputBx"><input type="email" placeholder="E-mail" required></div>
+                        <div class="offer-form-inputBx"><input type="text" placeholder="Компания" required></div>
+                        <button class="animate-button shine offer-form__button">
+                            отправить
+                            <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M38.1908 4.21403C38.3861 4.01877 38.3861 3.70219 38.1908 3.50692L35.0088 0.324943C34.8135 0.129681 34.497 0.129681 34.3017 0.324943C34.1064 0.520205 34.1064 0.836787 34.3017 1.03205L37.1301 3.86048L34.3017 6.6889C34.1064 6.88417 34.1064 7.20075 34.3017 7.39601C34.497 7.59127 34.8135 7.59127 35.0088 7.39601L38.1908 4.21403ZM0.488403 4.36047L37.8372 4.36048L37.8372 3.36048L0.488403 3.36047L0.488403 4.36047Z" fill="#FEC000"/>
+                            </svg>
+                        </button>
+                        <!-- /.offer-form__button -->
+                    </form>
+                </div>
+                <!-- /.offer-formBx -->
+            </div>
+            <!-- /.offer-inner -->
+        </div>
+        <!-- /.offer__container -->
+    </section>
+    <!-- /.offer -->
+
+    <section class="brands" id="brands">
+        <div class="brands__container">
+            <div class="titleBx brands-titleBx">
+                <h2 class="brands__title title">НАШИ БРЕНДЫ</h2>
+                <!-- /.brands__title title -->
+                <p class="brands__subtitle subtitle">Осуществляем поставку специализированной и грузовой техники только лучших
+                    <br>
+                    Европейских брендов с высокой производительностью и безупречным качеством.</p>
+                <!-- /.brands__subtitle subtitle -->
+            </div>
+            <!-- /.brands-titleBx titleBx -->
+            <div class="brands-inner">
+                <div class="brands-slider" id="brands-slider">
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/1.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/2.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/3.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/4.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/5.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/6.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/6.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/brands/6.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- /.brands-slider -->
+                <div class="brands-arrow">
+                    <div class="brands-arrow__item left" id="brands-prev">
+                        <span></span>
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659725 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM39 3.5L1 3.5L1 4.5L39 4.5L39 3.5Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="brands-arrow__item right" id="brands-next">
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.3536 3.64644C38.5488 3.84171 38.5488 4.15829 38.3536 4.35355L35.1716 7.53553C34.9763 7.73079 34.6597 7.73079 34.4645 7.53553C34.2692 7.34027 34.2692 7.02369 34.4645 6.82842L37.2929 4L34.4645 1.17157C34.2692 0.976308 34.2692 0.659725 34.4645 0.464463C34.6597 0.269201 34.9763 0.269201 35.1716 0.464463L38.3536 3.64644ZM-4.37114e-08 3.5L38 3.5L38 4.5L4.37114e-08 4.5L-4.37114e-08 3.5Z" fill="black"/>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- /.brands-arrow -->
+            </div>
+            <!-- /.brands-inner -->
+        </div>
+        <!-- /.brands__container -->
+    </section>
+    <!-- /.brends -->
+
+    <section class="purchase" id="purchase">
+        <div class="purchase__container">
+            <div class="purchase-inner">
+                <h2 class="purchase__title">ПОКУПКА ТЕХНИКИ</h2>
+                <!-- /.purchase__title -->
+                <p class="purchase__subtitle">ПОСЛЕ СДЕЛКИ вы ПОЛУЧАЕТЕ ТРАНСПОРТНОЕ СРЕДСТВО <br>
+                    И ГРАМОТНО ОФОРМЛЕННЫЙ ПАКЕТ ДОКУМЕНТОВ</p>
+                <!-- /.purchase__subtitle -->
+                <p class="purchase__desc">Мы ценим время и деньги наших клиентов, поэтому предлагаем полный комплекс товаров и услуг, начиная от поставки техники
+                    и снабжения ее запасными частями, заканчивая полной таможенной очисткой и содействием в получении лизинга. Мы предлагаем своим заказчикам наиболее привлекательные условия поставки б/у спецтехники и выгодные финансовые решения.</p>
+                <!-- /.purchase__desc -->
+                <button class="purchase-buttonBx">
+                    <button class="animate-button shine purchase__button" data-type="form">
+                        получить консультацию
+                        <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.7065 4.35356C30.9018 4.15829 30.9018 3.84171 30.7065 3.64645L27.5245 0.464468C27.3293 0.269206 27.0127 0.269206 26.8174 0.464468C26.6222 0.659731 26.6222 0.976313 26.8174 1.17158L29.6459 4L26.8174 6.82843C26.6222 7.02369 26.6222 7.34027 26.8174 7.53554C27.0127 7.7308 27.3293 7.7308 27.5245 7.53554L30.7065 4.35356ZM0.588257 4.5L30.353 4.5L30.353 3.5L0.588257 3.5L0.588257 4.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <!-- /.purchase__button -->
+                </button>
+                <!-- /.purchase-buttonBx -->
+            </div>
+            <!-- /.purchase-inner -->
+        </div>
+        <!-- /.purchase__container -->
+    </section>
+    <!-- /.purchase -->
+
+    <section class="brands" id="partners">
+        <div class="brands__container">
+            <div class="titleBx brands-titleBx">
+                <h2 class="brands__title title">НАШИ ПАРТНЕРЫ</h2>
+                <!-- /.brands__title title -->
+                <p class="brands__subtitle subtitle">Осуществляем поставку специализированной и грузовой техники только лучших
+                    <br>
+                    Европейских брендов с высокой производительностью и безупречным качеством.</p>
+                <!-- /.brands__subtitle subtitle -->
+            </div>
+            <!-- /.brands-titleBx titleBx -->
+            <div class="brands-inner">
+                <div class="brands-slider" id="partners-slider">
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/1.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/2.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/3.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/4.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/4.png" alt=""></div>
+                    </div>
+                    <div class="brands__item">
+                        <div class="brands__item-imgBx"><img src="images/partners/4.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- /.brands-slider -->
+                <div class="brands-arrow">
+                    <div class="brands-arrow__item left" id="partners-prev">
+                        <span></span>
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659725 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM39 3.5L1 3.5L1 4.5L39 4.5L39 3.5Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="brands-arrow__item right" id="partners-next">
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.3536 3.64644C38.5488 3.84171 38.5488 4.15829 38.3536 4.35355L35.1716 7.53553C34.9763 7.73079 34.6597 7.73079 34.4645 7.53553C34.2692 7.34027 34.2692 7.02369 34.4645 6.82842L37.2929 4L34.4645 1.17157C34.2692 0.976308 34.2692 0.659725 34.4645 0.464463C34.6597 0.269201 34.9763 0.269201 35.1716 0.464463L38.3536 3.64644ZM-4.37114e-08 3.5L38 3.5L38 4.5L4.37114e-08 4.5L-4.37114e-08 3.5Z" fill="black"/>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- /.brands-arrow -->
+            </div>
+            <!-- /.brands-inner -->
+        </div>
+        <!-- /.brands__container -->
+    </section>
+    <!-- /.brends -->
+
+    <section class="portfolio">
+        <div class="portfolio__container">
+            <h2 class="portfolio__title">Наше портфолио</h2>
+            <!-- /.portfolio__title title -->
+            <div class="portfolio-inner">
+                <div class="portfolio-slider">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-imgBx"><img src="images/portfolio/1.png" alt=""></div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-imgBx"><img src="images/portfolio/2.png" alt=""></div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-imgBx"><img src="images/portfolio/3.png" alt=""></div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-imgBx"><img src="images/portfolio/3.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- /.portfolio-slider -->
+                <div class="brands-arrow">
+                    <div class="brands-arrow__item left" id="portfolio-prev">
+                        <span></span>
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659725 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM39 3.5L1 3.5L1 4.5L39 4.5L39 3.5Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="brands-arrow__item right" id="portfolio-next">
+                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.3536 3.64644C38.5488 3.84171 38.5488 4.15829 38.3536 4.35355L35.1716 7.53553C34.9763 7.73079 34.6597 7.73079 34.4645 7.53553C34.2692 7.34027 34.2692 7.02369 34.4645 6.82842L37.2929 4L34.4645 1.17157C34.2692 0.976308 34.2692 0.659725 34.4645 0.464463C34.6597 0.269201 34.9763 0.269201 35.1716 0.464463L38.3536 3.64644ZM-4.37114e-08 3.5L38 3.5L38 4.5L4.37114e-08 4.5L-4.37114e-08 3.5Z" fill="black"/>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- /.brands-arrow -->
+            </div>
+            <!-- /.portfolio-inner -->
+        </div>
+        <!-- /.portfolio__container -->
+    </section>
+    <!-- /.portfolio -->
+
+    <section class="map">
+        <div class="map-overflow"></div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba0efa3c412230dd4c8f6da36afadcaaf19718649d9bd598f8e784f9ad4bac7e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
+    <!-- /.map -->
+</main>
+<footer class="footer" id="footer">
+  <div class="footer__container">
+    <div class="footer-inner">
+      <div class="footer-logoBx">
+        <div class="footer-logo"><img src="images/header/logo.png" alt=""></div>
+        <p class="footer-address">
+          236023 Россия, <br>
+          Калининград, ул. Лейтенанта Яналова, дом 42, каб. № 13
+        </p>
+        <!-- /.footer-address -->
+      </div>
+      <!-- /.footer-logoBx -->
+      <div class="footer__item">
+        <p class="footer__item-title">ЗАПАСНЫЕ <br>
+          ЧАСТИ И АГРЕГАТЫ</p>
+        <div class="footer__item-helper"><a href="tel: +7 (911) 460 80 41" class="footer__item-link">+7 (911) 460 80 41</a>
+          <a href="mailto: navigator-yug@mail.ru" class="footer__item-link">navigator-yug@mail.ru</a></div>
+      </div>
+      <div class="footer__item">
+        <p class="footer__item-title">СПЕЦиальная <br>
+          ТЕХНИКА</p>
+        <div class="footer__item-helper"><a href="tel: +7 (911) 496 59 76" class="footer__item-link">+7 (911) 496 59 76</a>
+        <a href="mailto: navigator-yug@mail.ru" class="footer__item-link">navigator-yug@mail.ru</a></div>
+      </div>
+      <div class="footer__item">
+        <p class="footer__item-title">ГРУЗОВОЙ <br>
+          КОММЕРЧЕСКИЙ ТРАНСПОРТ</p>
+        <div class="footer__item-helper"><a href="tel: +7 (911) 860 30 04" class="footer__item-link">+7 (911) 860 30 04</a>
+        <a href="mailto: navigator.truck39@gmail.com" class="footer__item-link">navigator.truck39@gmail.com</a></div>
+      </div>
+    </div>
+    <!-- /.footer-inner -->
+  </div>
+<!--  <section class="footer-bottom">-->
+<!--    <div class="footer-bottom__container">-->
+<!--      <div class="footer-bottom-inner">-->
+<!--        <p class="footer-bottom__item">2023 © «Navigator»</p>-->
+<!--        <a href="#" class="footer-bottom__item">Политика конфиденциальности</a>-->
+<!--        <a href="#" class="footer-bottom__item">Пользовательское соглашение</a>-->
+<!--        <a href="#" class="footer-bottom__item">Договор оферты</a></div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; /.footer-bottom__container &ndash;&gt;-->
+<!--  </section>-->
+<!--  &lt;!&ndash; /.footer-bottom &ndash;&gt;-->
+
+  <img class="left footer-pattern" src="../images/advantages/pattern-circle.svg" alt="">
+  <img class="right footer-pattern" src="../images/advantages/pattern-circle.svg" alt="">
+</footer>
+
+<div class="blackout"></div>
+
+<div class="_overlay-bg modal" data-popup="form">
+  <form action="#" class="modal-form">
+    <p class="modal-form__title">Оставьте <br>
+      номер телефона <br>
+      мы вам перезвоним</p>
+    <!-- /.modal-form__title -->
+    <div class="modal-form-inputBx"><input type="text" class="phone-mask" placeholder="Номер телефона" required></div>
+    <!-- /.modal-form-inputBx -->
+    <button class="animate-button shine modal-form__button">
+      отправить
+      <svg width="39" height="8" viewBox="0 0 39 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M38.1908 4.21402C38.3861 4.01876 38.3861 3.70218 38.1908 3.50692L35.0088 0.324935C34.8135 0.129673 34.497 0.129673 34.3017 0.324935C34.1064 0.520197 34.1064 0.83678 34.3017 1.03204L37.1301 3.86047L34.3017 6.6889C34.1064 6.88416 34.1064 7.20074 34.3017 7.396C34.497 7.59127 34.8135 7.59127 35.0088 7.396L38.1908 4.21402ZM0.488403 4.36047L37.8372 4.36047L37.8372 3.36047L0.488403 3.36047L0.488403 4.36047Z" fill="#FEC000"/>
+      </svg>
+    </button>
+    <!-- /.modal-form__button -->
+
+    <div class="button-close modal-form-cross">
+      <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M31.4801 21.5199L26.0001 27M26.0001 27L20.52 32.4801M26.0001 27L20.52 21.5199M26.0001 27L31.4801 32.4801M1.04379 20.3106C2.21364 15.9291 4.52145 11.9349 7.73313 8.73307C17.822 -1.35576 34.1782 -1.35576 44.267 8.73306C54.3558 18.8219 54.3558 35.1781 44.267 45.2669C34.1782 55.3557 17.822 55.3557 7.73313 45.2669C4.40672 41.9405 2.17451 37.9291 1.04379 33.6893" stroke="#FEC000" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <!-- /.modal-form-cross -->
+  </form>
+  <!-- /.modal-form -->
+</div>
+<div class="_overlay-bg modal thanks" data-popup="thanks">
+  <form action="#" class="modal-form">
+    <p class="modal-form__title">Сообщение отправлено</p>
+    <div class="button-close modal-form-cross">
+      <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M31.4801 21.5199L26.0001 27M26.0001 27L20.52 32.4801M26.0001 27L20.52 21.5199M26.0001 27L31.4801 32.4801M1.04379 20.3106C2.21364 15.9291 4.52145 11.9349 7.73313 8.73307C17.822 -1.35576 34.1782 -1.35576 44.267 8.73306C54.3558 18.8219 54.3558 35.1781 44.267 45.2669C34.1782 55.3557 17.822 55.3557 7.73313 45.2669C4.40672 41.9405 2.17451 37.9291 1.04379 33.6893" stroke="#FEC000" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <!-- /.modal-form-cross -->
+  </form>
+  <!-- /.modal-form -->
+</div>
+<!--==========   PLUGINS JS   ==========-->
+<script defer="defer" src="static/plugins/jquery.min.js"></script>
+<script defer="defer" src="static/plugins/jquery.maskedinput.min.js"></script>
+<script defer="defer" src="static/plugins/slick.min.js"></script>
+<script defer="defer" src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+<!--==========   SCRIPTS   ==========-->
+<script defer="defer" src="js/app.js"></script>
+
+</body>
+</html> 

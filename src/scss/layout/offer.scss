@@ -58,6 +58,10 @@
   }
   &-form {
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &-inputBx {
       @include notLast {
         margin-bottom: 39px;
@@ -127,12 +131,13 @@
       text-transform: uppercase;
       padding: 16px 30px 16px 30px;
       line-height: rem(30);
+      max-width: 219px;
       & svg {
         margin-left: 40px;
       }
     }
   }
-  @include media(600) {
+  @include media(768) {
     &-inner {
       flex-direction: column;
       padding: 20px;
