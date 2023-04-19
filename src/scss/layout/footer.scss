@@ -61,7 +61,7 @@
     &-inner {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
     &__item {
       display: block;
@@ -85,7 +85,7 @@
     }
   }
   @include media(768) {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     &-address {
       margin-top: 20px;
     }
@@ -99,8 +99,9 @@
       align-items: center;
       justify-content: space-between;
       padding-right: 0;
-      @include media(360) {
-        grid-template-columns: repeat(1, 1fr);
+      @include media(374) {
+        flex-direction: column;
+        align-items: flex-start;
       }
       &:last-child {
         & .footer__item-title {
@@ -116,7 +117,7 @@
         margin-bottom: 0;
         &:after {
           bottom: -15px;
-          @include media(360) {
+          @include media(374) {
             display: none;
           }
         }
@@ -128,7 +129,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        @include media(360) {
+        @include media(374) {
           align-items: flex-start;
           padding-top: 20px;
         }
