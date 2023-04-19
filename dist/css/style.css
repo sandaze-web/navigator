@@ -362,7 +362,7 @@ html {
 
 body {
   font-family: "Oswald-Regular", sans-serif;
-  background: #F5F5F5;
+  background: #fff;
   overflow-x: hidden;
 }
 
@@ -669,7 +669,8 @@ button {
     padding-top: 150px;
   }
   .content__title {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
   }
 }
 
@@ -1663,8 +1664,7 @@ button {
   }
   .footer__item {
     padding: 15px 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
